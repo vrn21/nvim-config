@@ -19,3 +19,7 @@ end
 dofile(vim.g.base46_cache .. "defaults")
 vim.opt.rtp:prepend(lazypath)
 require "plugins"
+
+if vim.g.neovide then  
+ vim.o.guifont = "JetBrainsMonoNL Nerd Font:h18" -- text below applies for VimScript
+end
